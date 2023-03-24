@@ -1,0 +1,182 @@
+/*GENERAL PAGE CSS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: #f0ead2; */
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+.container {
+  max-width: 180rem;
+  padding: 1.2rem 3.2rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+header {
+  padding: 3.2rem 0;
+  display: flex;
+  flex-direction: row-reverse;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+.navigation {
+  display: flex;
+  gap: 3.2rem;
+}
+.navigation a {
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: -2px;
+  display: inline-block;
+  position: relative;
+}
+.navigation a:hover {
+  font-weight: thicker;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+.navigation a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*BELOW 1440px [87em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 90em) {
+  html {
+    font-size: 65%;
+  }
+  /*  padding: 3.2rem 12.4rem 0 26.4rem;*/
+  .intro {
+    padding: 3.2rem 12.4rem 0 8.4rem;
+  }
+  .intro-text {
+    /*  padding: 6.4rem; */
+    padding-right: 1.8rem;
+    padding-top: 2.8rem;
+  }
+  .me-img {
+    justify-self: center;
+    max-height: 85%;
+  }
+}
+
+/*BELOW 992px [48em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 62em) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding-bottom: 2.8rem;
+  }
+  .intro {
+    padding: 3.2rem;
+    gap: 1.6rem;
+  }
+  .intro-text {
+    padding: 0 1.2rem;
+  }
+  .me-img {
+    justify-self: center;
+    max-height: 80%;
+  }
+}
+
+/*BELOW 528 [33em*16px] Large Smart Phone*/
+@media (max-width: 33em) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding-top: 1rem;
+    padding-bottom: 2.4rem;
+    justify-content: center;
+  }
+  .navigation a::after {
+    background-color: transparent;
+  }
+  .navigation a:hover {
+    color: none;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 3.4rem;
+    padding-top: 1.2rem;
+  }
+  #me-img-lg {
+    display: none;
+  }
+  #me-img-sm {
+    display: block;
+    max-width: 15%;
+    grid-row: 1;
+    justify-self: center;
+    align-self: start;
+  }
+  .social-media {
+    justify-content: center;
+  }
+  .gallery-grid {
+    padding-top: 2.8rem;
+    gap: 4.2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .for-fun-text {
+    display: none;
+  }
+}
+
+/*BELOW  432 [27em*16px] Smaller Smart Phone*/
+@media (max-width: 27em) {
+  html {
+    font-size: 40%;
+  }
+  .header {
+    padding: 2.2rem 0 4.2rem 0;
+  }
+  .container {
+    padding: 1.2rem 1.8rem;
+    margin: 0 auto;
+  }
+}
+
+/*BELOW  304 [27em*16px] Very Small Smart Phone*/
+@media (max-width: 19em) {
+  html {
+    font-size: 35%;
+  }
+  .container {
+    padding: 1.2rem 2.2rem;
+    margin: 0 auto;
+  }
+}

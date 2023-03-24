@@ -1,0 +1,139 @@
+.navigation a {
+  color: #7b61ff;
+}
+.navigation a:hover {
+  color: #0fe397;
+}
+.navigation a::after {
+  background-color: #0fe397;
+}
+
+.page-top {
+  background-color: rgba(168, 155, 231, 0.071);
+}
+.intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 4rem;
+  column-gap: 7rem;
+  justify-items: center;
+  align-items: center;
+  font-weight: 500;
+  padding-bottom: 12rem;
+  height: 100vh;
+}
+.intro-text {
+  font-size: 4rem;
+  line-height: 2;
+  letter-spacing: -2px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+
+.contact-btn {
+  font-size: 2.4rem;
+  text-decoration: none;
+  background-color: #7b61ff;
+  color: aliceblue;
+  padding: 1rem 4rem;
+  width: fit-content;
+  font-weight: 300;
+  border-radius: 15px;
+  letter-spacing: normal;
+}
+
+.contact-btn:hover {
+  background-color: #0fe397;
+  font-weight: 600;
+}
+
+#me-img-lg {
+  border-radius: 15px;
+  grid-column: 4, 1;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#me-img-sm {
+  display: none;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-top: 2.4rem;
+  margin-bottom: 2rem;
+}
+.social-media-icon {
+  color: #31393c;
+}
+.social-media-icon:hover {
+  color: #5c3ef5;
+}
+
+#my-work {
+  padding: 14rem 4rem 4rem 4rem;
+  background-color: rgba(15, 227, 149, 0.071);
+}
+
+#my-work h1 {
+  font-size: 4.8rem;
+  padding-left: 4rem;
+}
+
+.cards {
+  padding: 4rem 4rem 4rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 2px; */
+  background-color: white;
+  border: 1px solid rgba(188, 188, 188, 0.392);
+  box-shadow: 0px 10px 30px 4px rgba(99, 96, 96, 0.124);
+}
+
+.card:hover {
+  box-shadow: 0px 10px 30px 4px rgba(33, 62, 33, 0.553);
+}
+
+.card img {
+  object-fit: cover;
+  height: 420px;
+  width: 100%;
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+}
+
+.card-text {
+  border-top: 1px solid rgba(128, 128, 128, 0.272);
+  padding: 1.8rem 0 2rem 2.4rem;
+  align-self: stretch;
+}
+
+.card-text h2 {
+  font-size: 2.4rem;
+  color: #31393c;
+  padding-bottom: 6px;
+  letter-spacing: -1.5px;
+}
+
+.card-text p {
+  font-size: 1.2rem;
+  color: #31393c;
+  line-height: 1.5;
+  letter-spacing: 1.25px;
+}
