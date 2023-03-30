@@ -174,7 +174,7 @@
   /* MY WORK SECTION */
 
   #my-work {
-    padding: 10rem 4rem;
+    padding: 12rem 4rem;
     background-color: rgba(15, 227, 149, 0.071);
   }
 
@@ -229,12 +229,14 @@
     text-align: center;
     gap: 2rem;
   }
-
   .card img {
     object-fit: cover;
     height: 250px;
     width: 100%;
     border-top-right-radius: 2%;
     border-top-left-radius: 2%;
+  }
+  #my-work h1 {
+    font-size: 2rem;
   }
 }
