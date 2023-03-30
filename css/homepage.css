@@ -201,7 +201,7 @@
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
 @media (max-width: 27em) {
   .page-top {
-    height: 50vh;
+    height: 100vh;
   }
   .intro {
     grid-template-columns: 1fr;
@@ -221,6 +221,9 @@
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
 @media (max-width: 19em) {
+  .page-top {
+    height: 100vh;
+  }
   .intro-text {
     align-items: center;
     text-align: center;

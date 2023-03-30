@@ -139,6 +139,9 @@ header {
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
 @media (max-width: 19em) {
   html {
-    font-size: 35%;
+    font-size: 40%;
+  }
+  header {
+    padding-top: 4rem 2rem;
   }
 }
