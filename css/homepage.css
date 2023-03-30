@@ -211,7 +211,8 @@
     align-content: start;
   }
   .intro-text {
-    align-items: left;
+    align-items: center;
+    text-align: center;
     gap: 2.8rem;
   }
   #me-img-lg {
