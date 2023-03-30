@@ -187,7 +187,6 @@
 
   .cards {
     grid-template-columns: 1fr;
-    gap: 4rem;
     justify-content: center;
   }
 
@@ -221,6 +220,19 @@
     font-size: 2.4rem;
     padding: 1rem 4rem;
   }
+  .card-text h2 {
+    font-size: 2.8rem;
+  }
+  .card img {
+    height: 200px;
+    width: 100%;
+  }
+  .card-text p {
+    font-size: 1.4rem;
+    color: #31393c;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
 }
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
@@ -234,11 +246,8 @@
     gap: 2.8rem;
   }
   .card img {
-    object-fit: cover;
-    height: 250px;
+    height: 200px;
     width: 100%;
-    border-top-right-radius: 2%;
-    border-top-left-radius: 2%;
   }
   #my-work h1 {
     font-size: 2rem;
