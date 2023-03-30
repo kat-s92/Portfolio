@@ -12,20 +12,19 @@
 
 .page-top {
   background-color: rgba(168, 155, 231, 0.071);
-  height: 100vh;
 }
 .intro {
+  height: 90vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 4rem;
+  padding: 8rem 4rem 0rem 4rem;
   column-gap: 7rem;
   justify-items: center;
-  align-items: center;
   font-weight: 500;
   /* padding-bottom: 8rem; */
 }
 .intro-text {
-  font-size: 4rem;
+  font-size: 4.8rem;
   line-height: 2;
   letter-spacing: -2px;
   display: flex;
@@ -34,7 +33,7 @@
 }
 
 .contact-btn {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   text-decoration: none;
   background-color: #7b61ff;
   color: aliceblue;
@@ -52,6 +51,7 @@
 
 #me-img-lg {
   border-radius: 15px;
+  margin-top: 8rem;
   grid-column: 2;
   width: 420px;
   height: 420px;
@@ -70,27 +70,30 @@
 }
 .social-media-icon {
   color: #31393c;
-  font-size: 48px;
+  font-size: 60px;
 }
 .social-media-icon:hover {
   color: #5c3ef5;
 }
 
 #my-work {
-  padding: 14rem 4rem 4rem 4rem;
+  padding: 16rem 4rem 12rem 4rem;
   background-color: rgba(15, 227, 149, 0.071);
+  margin-bottom: 4rem;
 }
 
 #my-work h1 {
   font-size: 4.8rem;
   padding-left: 4rem;
+
+  padding-bottom: 4rem;
 }
 
 .cards {
   padding: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 6rem;
 }
 
 .cards a {
@@ -115,7 +118,7 @@
 
 .card img {
   object-fit: cover;
-  height: 420px;
+  height: 480px;
   width: 100%;
   border-top-right-radius: 2%;
   border-top-left-radius: 2%;
@@ -169,7 +172,7 @@
   }
   .page-top {
     background-color: rgba(168, 155, 231, 0.071);
-    height: 50vh;
+    /* height: 50vh; */
   }
   /* MY WORK SECTION */
 
@@ -200,11 +203,12 @@
 }
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
 @media (max-width: 27em) {
-  .page-top {
-    height: 100vh;
-  }
+  /* .page-top {
+    height: 90vh;
+  } */
   .intro {
     grid-template-columns: 1fr;
+    align-content: start;
   }
   .intro-text {
     align-items: left;
@@ -222,8 +226,8 @@
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
 @media (max-width: 19em) {
-  .page-top {
-    height: 100vh;
+  .intro {
+    align-content: start;
   }
   .intro-text {
     align-items: center;
