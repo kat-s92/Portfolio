@@ -11,6 +11,7 @@
 }
 
 .page-top {
+  padding-bottom: 4rem;
   background-color: rgba(168, 155, 231, 0.071);
 }
 .intro {
@@ -75,7 +76,8 @@
 }
 
 #my-work {
-  padding: 16rem 4rem 12rem 4rem;
+  margin-top: 4rem;
+  padding: 12rem 4rem 12rem 4rem;
   background-color: rgba(15, 227, 149, 0.071);
   margin-bottom: 4rem;
 }
@@ -83,8 +85,7 @@
 #my-work h1 {
   font-size: 4.8rem;
   padding-left: 4rem;
-
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .cards {
@@ -111,12 +112,12 @@
 }
 
 .card:hover {
-  box-shadow: 0px 10px 30px 4px rgba(33, 62, 33, 0.553);
+  box-shadow: 0px 10px 30px 4px rgba(189, 194, 189, 0.553);
 }
 
 .card img {
   object-fit: cover;
-  height: 480px;
+  height: 420px;
   width: 100%;
   border-top-right-radius: 2%;
   border-top-left-radius: 2%;
@@ -220,6 +221,17 @@
     font-size: 2.4rem;
     padding: 1rem 4rem;
   }
+
+  #my-work {
+    padding: 4rem 2rem;
+  }
+
+  #my-work h1 {
+    padding-left: 0;
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+  }
+
   .card-text h2 {
     font-size: 2.8rem;
   }
@@ -246,10 +258,7 @@
     gap: 2.8rem;
   }
   .card img {
-    height: 200px;
+    height: 120px;
     width: 100%;
-  }
-  #my-work h1 {
-    font-size: 2rem;
   }
 }
