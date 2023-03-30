@@ -208,6 +208,7 @@
   }
   .intro-text {
     align-items: left;
+    gap: 2.8rem;
   }
   #me-img-lg {
     grid-column: 1;
@@ -227,7 +228,7 @@
   .intro-text {
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 2.8rem;
   }
   .card img {
     object-fit: cover;
