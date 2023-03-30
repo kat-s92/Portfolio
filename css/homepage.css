@@ -1,3 +1,5 @@
+@import url("/css/style.css");
+
 .navigation a {
   color: #7b61ff;
 }
@@ -10,6 +12,7 @@
 
 .page-top {
   background-color: rgba(168, 155, 231, 0.071);
+  height: 100vh;
 }
 .intro {
   display: grid;
@@ -19,8 +22,7 @@
   justify-items: center;
   align-items: center;
   font-weight: 500;
-  padding-bottom: 12rem;
-  height: 100vh;
+  /* padding-bottom: 8rem; */
 }
 .intro-text {
   font-size: 4rem;
@@ -50,24 +52,25 @@
 
 #me-img-lg {
   border-radius: 15px;
-  grid-column: 4, 1;
+  grid-column: 2;
   width: 420px;
   height: 420px;
   border-radius: 50%;
   object-fit: cover;
 }
-#me-img-sm {
+/* #me-img-sm {
   display: none;
-}
+} */
 .social-media {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
   padding-top: 2.4rem;
   margin-bottom: 2rem;
 }
 .social-media-icon {
   color: #31393c;
+  font-size: 48px;
 }
 .social-media-icon:hover {
   color: #5c3ef5;
@@ -84,7 +87,7 @@
 }
 
 .cards {
-  padding: 4rem 4rem 4rem 4rem;
+  padding: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
@@ -136,4 +139,99 @@
   color: #31393c;
   line-height: 1.5;
   letter-spacing: 1.25px;
+}
+
+/*BELOW 528 [33em*16px] Large Smart Phone*/
+@media (max-width: 33em) {
+  /* HOMEPAGE INTRO SECTION */
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 3.4rem;
+    padding-top: 1.2rem;
+  }
+  .intro-text {
+    font-size: 2.4rem;
+    padding-left: 0;
+    letter-spacing: normal;
+  }
+  #me-img-lg {
+    width: 120px;
+    height: 120px;
+    align-self: flex-start;
+    margin-top: 7rem;
+  }
+  .social-media-icon {
+    font-size: 42px;
+  }
+  .contact-btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+  }
+  .page-top {
+    background-color: rgba(168, 155, 231, 0.071);
+    height: 50vh;
+  }
+  /* MY WORK SECTION */
+
+  #my-work {
+    padding: 10rem 4rem;
+    background-color: rgba(15, 227, 149, 0.071);
+  }
+
+  #my-work h1 {
+    padding-left: 0;
+    font-size: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  .card {
+    width: 80vw;
+    box-shadow: none;
+  }
+  .card:hover {
+    box-shadow: none;
+  }
+}
+/*BELOW  432 [27em*16px] Smaller Smart Phone*/
+@media (max-width: 27em) {
+  .page-top {
+    height: 50vh;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro-text {
+    align-items: left;
+  }
+  #me-img-lg {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .contact-btn {
+    font-size: 2.4rem;
+    padding: 1rem 4rem;
+  }
+}
+
+/*BELOW  304 [27em*16px] Very Small Smart Phone*/
+@media (max-width: 19em) {
+  .intro-text {
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .card img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+  }
 }

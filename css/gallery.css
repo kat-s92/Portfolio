@@ -81,56 +81,28 @@ figure {
 
 /*BELOW 528 [33em*16px] Large Smart Phone*/
 @media (max-width: 33em) {
-  html {
-    font-size: 55%;
-  }
-  header {
-    padding-top: 1rem;
-    padding-bottom: 2.4rem;
-    justify-content: center;
-  }
+  /* GALLERY  */
   .gallery-grid {
     padding-top: 2.8rem;
     gap: 4.2rem;
     grid-template-columns: repeat(1, 1fr);
   }
   .for-fun-text {
-    display: none;
-  }
-
-  .navigation a:hover {
-    color: none;
-  }
-  .navigation a::after {
-    background-color: transparent;
+    text-align: left;
   }
 }
 
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
 @media (max-width: 27em) {
-  html {
-    font-size: 48%;
-  }
-  .header {
-    padding: 2.2rem 0 4.2rem 0;
-  }
   .gallery-grid {
     padding: 2.2rem;
     gap: 2.2rem;
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .container {
-    padding: 1.2rem 1.8rem;
-    margin: 0 auto;
-  }
 }
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
 @media (max-width: 19em) {
-  html {
-    font-size: 40%;
-  }
   .gallery-grid {
     padding: 2.2rem;
     gap: 2.2rem;

@@ -1,3 +1,4 @@
+@import url("css/homepage.css");
 /*GENERAL PAGE CSS*/
 * {
   padding: 0;
@@ -16,7 +17,7 @@ body {
 }
 .container {
   max-width: 180rem;
-  padding: 1.2rem 3.2rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
@@ -97,11 +98,10 @@ header {
     font-size: 55%;
   }
   header {
-    padding-bottom: 2.8rem;
+    padding-bottom: 3.2rem;
   }
   .intro {
-    padding: 3.2rem;
-    gap: 1.6rem;
+    gap: 1rem;
   }
   .intro-text {
     padding: 0 1.2rem;
@@ -118,8 +118,7 @@ header {
     font-size: 55%;
   }
   header {
-    padding-top: 1rem;
-    padding-bottom: 2.4rem;
+    padding-top: 2rem 2rem;
     justify-content: center;
   }
   .navigation a::after {
@@ -128,32 +127,6 @@ header {
   .navigation a:hover {
     color: none;
   }
-  .intro {
-    grid-template-columns: 1fr;
-    gap: 3.4rem;
-    padding-top: 1.2rem;
-  }
-  #me-img-lg {
-    display: none;
-  }
-  #me-img-sm {
-    display: block;
-    max-width: 15%;
-    grid-row: 1;
-    justify-self: center;
-    align-self: start;
-  }
-  .social-media {
-    justify-content: center;
-  }
-  .gallery-grid {
-    padding-top: 2.8rem;
-    gap: 4.2rem;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .for-fun-text {
-    display: none;
-  }
 }
 
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
@@ -161,22 +134,11 @@ header {
   html {
     font-size: 40%;
   }
-  .header {
-    padding: 2.2rem 0 4.2rem 0;
-  }
-  .container {
-    padding: 1.2rem 1.8rem;
-    margin: 0 auto;
-  }
 }
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
 @media (max-width: 19em) {
   html {
     font-size: 35%;
-  }
-  .container {
-    padding: 1.2rem 2.2rem;
-    margin: 0 auto;
   }
 }
