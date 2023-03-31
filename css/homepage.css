@@ -265,16 +265,22 @@
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
 @media (max-width: 19em) {
-  .intro {
-    align-content: start;
+  .contact-btn {
+    font-size: 2.4rem;
   }
   .intro-text {
-    align-items: center;
     text-align: center;
-    gap: 2.8rem;
+    gap: 2rem;
   }
   .card img {
     height: 120px;
     width: 100%;
+  }
+  #my-work {
+    padding: 4rem 2rem;
+  }
+  #my-work h1 {
+    font-size: 2rem;
+    /* padding-left: 0; */
   }
 }
