@@ -11,16 +11,17 @@
 }
 
 .page-top {
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   background-color: rgba(168, 155, 231, 0.071);
 }
 .intro {
-  height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 2rem 4rem 12rem 6.4rem;
+  padding: 2rem;
   column-gap: 4rem;
   font-weight: 500;
+  justify-items: center;
+  align-items: center;
 }
 .intro-text {
   font-size: 4.2rem;
@@ -28,7 +29,6 @@
   letter-spacing: -2px;
   display: flex;
   flex-direction: column;
-  padding-left: 4rem;
 }
 
 .contact-btn {
@@ -57,9 +57,7 @@
   border-radius: 50%;
   object-fit: cover;
 }
-/* #me-img-sm {
-  display: none;
-} */
+
 .social-media {
   display: flex;
   align-items: center;
@@ -77,7 +75,7 @@
 
 #my-work {
   margin-top: 4rem;
-  padding: 12rem 4rem 12rem 4rem;
+  padding: 6rem 4rem;
   background-color: rgba(15, 227, 149, 0.071);
   margin-bottom: 4rem;
 }
@@ -117,7 +115,7 @@
 
 .card img {
   object-fit: cover;
-  height: 420px;
+  height: 400px;
   width: 100%;
   border-top-right-radius: 2%;
   border-top-left-radius: 2%;
@@ -143,17 +141,57 @@
   letter-spacing: 1.25px;
 }
 
+/*ABOVE 1280 [87em*16px] (Landscape Tablet Screen)*/
+@media (min-width: 80em) {
+  .page-top {
+    padding: 8rem;
+  }
+  .intro-text {
+    font-size: 4.6rem;
+    gap: 2rem;
+  }
+}
+
+/*BELOW 1280px [87em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 80em) {
+  .page-top {
+    padding: 4rem;
+  }
+  .intro-text {
+    font-size: 3.8rem;
+  }
+  #me-img-lg {
+    width: 40%;
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/*BELOW 992px [48em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 62em) {
+  .intro {
+    gap: 1rem;
+  }
+  #me-img-lg {
+    width: 40%;
+    width: 260px;
+    height: 260px;
+  }
+  .card img {
+    height: 320px;
+    width: 100%;
+  }
+}
+
 /*BELOW 528 [33em*16px] Large Smart Phone*/
 @media (max-width: 33em) {
   /* HOMEPAGE INTRO SECTION */
   .intro {
     grid-template-columns: 1fr;
     gap: 3.4rem;
-    padding-top: 1.2rem;
   }
   .intro-text {
     font-size: 2.4rem;
-    padding-left: 0;
     letter-spacing: normal;
   }
   #me-img-lg {
@@ -167,30 +205,17 @@
   }
   .contact-btn {
     font-size: 1.8rem;
-    padding: 1rem 2rem;
   }
-  .page-top {
-    background-color: rgba(168, 155, 231, 0.071);
-    /* height: 50vh; */
-  }
+
   /* MY WORK SECTION */
-
-  #my-work {
-    padding: 12rem 4rem;
-    background-color: rgba(15, 227, 149, 0.071);
-  }
-
   #my-work h1 {
     padding-left: 0;
     font-size: 2.4rem;
-    padding-bottom: 2.4rem;
   }
-
   .cards {
     grid-template-columns: 1fr;
     justify-content: center;
   }
-
   .card {
     width: 80vw;
     box-shadow: none;
@@ -201,37 +226,22 @@
 }
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
 @media (max-width: 27em) {
-  /* .page-top {
-    height: 90vh;
-  } */
-  .intro {
-    grid-template-columns: 1fr;
-    align-content: start;
-  }
   .intro-text {
     align-items: center;
     text-align: center;
-    gap: 2.8rem;
+    gap: 2.4rem;
   }
   #me-img-lg {
     grid-column: 1;
     grid-row: 1;
+    margin-top: 0;
   }
   .contact-btn {
-    font-size: 2.4rem;
-    padding: 1rem 4rem;
+    font-size: 2.8rem;
   }
-
-  #my-work {
-    padding: 4rem 2rem;
-  }
-
   #my-work h1 {
-    padding-left: 0;
     font-size: 3.2rem;
-    padding-bottom: 2rem;
   }
-
   .card-text h2 {
     font-size: 2.8rem;
   }
@@ -240,10 +250,16 @@
     width: 100%;
   }
   .card-text p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #31393c;
     line-height: 1.5;
     letter-spacing: 1px;
+  }
+  .navigation a::after {
+    background-color: transparent;
+  }
+  .navigation a:hover {
+    color: none;
   }
 }
 
