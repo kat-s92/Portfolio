@@ -240,7 +240,7 @@
     font-size: 2.8rem;
   }
   #my-work h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .card-text h2 {
     font-size: 2.8rem;
@@ -281,6 +281,5 @@
   }
   #my-work h1 {
     font-size: 2rem;
-    /* padding-left: 0; */
   }
 }
