@@ -1,5 +1,4 @@
 @import url("css/homepage.css");
-@import url("css/fly_ux.css");
 
 /*GENERAL PAGE CSS*/
 * {
@@ -78,20 +77,19 @@ header {
 /*ABOVE 1280px [87em*16px] (Landscape Tablet Screen)*/
 @media (min-width: 80em) {
   header {
-    padding: 6rem 0;
+    padding: 3.2rem 0;
   }
   .navigation a {
-    font-size: 4.2rem;
+    font-size: 2.8rem;
   }
-}
-
-/*BELOW 1280px [87em*16px] (Landscape Tablet Screen)*/
-@media (max-width: 80em) {
   html {
     font-size: 65%;
   }
-  header {
-    padding: 4rem 0;
+}
+
+@media (max-width: 79em) {
+  html {
+    font-size: 50%;
   }
 }
 
