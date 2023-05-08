@@ -37,10 +37,11 @@ h1 {
 header {
   padding: 4rem 0;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   position: sticky;
   top: 0;
   z-index: 1;
+  justify-content: space-between;
   background-color: white;
 }
 .navigation {
@@ -72,6 +73,12 @@ header {
 .navigation a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.header-logo {
+  width: 32px;
+  height: 32px;
+  margin-left: 32px;
 }
 
 /*ABOVE 1280px [87em*16px] (Landscape Tablet Screen)*/
