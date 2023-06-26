@@ -106,7 +106,7 @@ h2 {
   margin-bottom: 6rem;
   margin-top: 2.2rem;
   background: #0fe397;
-  transform: matrix(1, 0, -0.18, 0.96, 0, 0);
+  /* transform: matrix(1, 0, -0.18, 0.96, 0, 0); */
 }
 
 #my-work h2 {
