@@ -355,3 +355,15 @@ h2 {
     font-size: 2rem;
   }
 }
+
+.footer {
+  justify-content: center;
+  padding-left: 3.2rem;
+  padding-bottom: 3.2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-link {
+  padding-left: 2px;
+}
