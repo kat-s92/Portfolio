@@ -112,11 +112,7 @@ header {
   html {
     font-size: 55%;
   }
-  header {
-    justify-content: center;
-  }
 }
-
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
 @media (max-width: 27em) {
   html {

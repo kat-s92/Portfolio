@@ -220,8 +220,8 @@ h2 {
   }
 
   #me-img-lg {
-    width: 320px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
   }
 }
 
@@ -232,8 +232,8 @@ h2 {
     gap: rem;
   }
   #me-img-lg {
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
   }
 }
 
@@ -256,6 +256,7 @@ h2 {
 /*BELOW 528 [33em*16px] Large Smart Phone*/
 @media (max-width: 33em) {
   /* HOMEPAGE INTRO SECTION */
+
   .intro {
     grid-template-columns: 1fr;
   }
