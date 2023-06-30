@@ -10,6 +10,8 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-width: normal;
+  scrollbar-color: #0fe397 rgb(251, 251, 251);
 }
 body {
   font-family: "Poppins", sans-serif;

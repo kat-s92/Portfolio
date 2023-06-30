@@ -369,12 +369,34 @@ h2 {
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
 @media (max-width: 19em) {
+  header {
+    padding: 2.8rem 0;
+  }
+  .header-logo {
+    margin-left: 0;
+  }
+  .navigation a {
+    font-size: 2.6rem;
+  }
+  .navigation {
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro {
+    padding: 8px 0 16px 0;
+  }
+  .intro-text {
+    font-size: 1.8rem;
+    text-align: center;
+    gap: 2rem;
+  }
   .contact-btn {
     font-size: 2.4rem;
   }
-  .intro-text {
-    text-align: center;
-    gap: 2rem;
+  .social-media {
+    align-items: center;
+    justify-content: center;
   }
   .card img {
     height: 120px;
@@ -385,6 +407,10 @@ h2 {
   }
   #my-work h1 {
     font-size: 2rem;
+    margin: 0;
+  }
+  #about {
+    padding: 0px;
   }
 }
 
@@ -397,4 +423,23 @@ h2 {
 
 .footer-link {
   padding-left: 2px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(224, 224, 224);
+  margin-block: 0.5rem;
+  border-radius: 100vw;
+}
+/* #0fe397 */
+
+html::-webkit-scrollbar {
+  width: 1rem;
+  height: 1em;
+  border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #184534;
+  border-radius: 100vw;
+  border: 0.25rem solid rgb(224, 224, 224);
 }
