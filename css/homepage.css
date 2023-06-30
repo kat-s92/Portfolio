@@ -20,11 +20,12 @@
   justify-items: center;
   align-items: center;
 }
+
 .intro-text {
   font-size: 4.2rem;
   line-height: 2;
   letter-spacing: -2px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 }
 
@@ -206,6 +207,36 @@ h2 {
   transform: scale(1.1);
 }
 
+#about {
+  padding: 8rem 4rem;
+  background-color: rgb(245, 251, 222);
+}
+
+#about p {
+  line-height: 2.5;
+  font-size: 1.5rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+#about h1 {
+  font-size: 4.2rem;
+  margin-left: 4rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  display: inline-block;
+  padding-bottom: 1.2rem;
+  padding-top: 1.2rem;
+  margin-bottom: 6rem;
+  margin-top: 2.2rem;
+  background: #0fe397;
+}
+
+#about h2 {
+  margin-bottom: 2rem;
+  padding-left: 3.2rem;
+}
+
 /*ABOVE 1280 [87em*16px] (Landscape Tablet Screen)*/
 @media (min-width: 80em) {
   .intro {
@@ -359,8 +390,7 @@ h2 {
 
 .footer {
   justify-content: center;
-  padding-left: 3.2rem;
-  padding-bottom: 3.2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
 }
