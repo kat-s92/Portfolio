@@ -24,6 +24,17 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+/*
+body::-webkit-scrollbar-track {
+  background: hsl(120 75% 50%/1);
+  margin-block: 0.5rem;
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar {
+  width: 2em;
+  height: 1em;
+} */
 
 h1,
 h2,
@@ -120,11 +131,15 @@ header {
   html {
     font-size: 45%;
   }
-}
-
-/*BELOW  304 [27em*16px] Very Small Smart Phone*/
-@media (max-width: 19em) {
+  .header-logo {
+    margin-left: 0;
+  }
+  .navigation {
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
   header {
-    padding-top: 4rem 2rem;
+    padding: 2.8rem 0;
   }
 }

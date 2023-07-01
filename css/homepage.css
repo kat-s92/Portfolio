@@ -327,22 +327,22 @@ h2 {
 }
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
 @media (max-width: 27em) {
-  header {
+  /* header {
     padding: 2.8rem 0;
-  }
+  } */
   .intro-text {
     align-items: center;
     text-align: center;
     gap: 2.4rem;
   }
-  .header-logo {
+  /* .header-logo {
     margin-left: 0;
   }
   .navigation {
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .intro {
     padding: 8px 0 16px 0;
   }
@@ -404,67 +404,6 @@ h2 {
   #about p {
     line-height: 1.5;
   }
-}
-
-/*BELOW  304 [27em*16px] Very Small Smart Phone*/
-@media (max-width: 19em) {
-  header {
-    padding: 2.8rem 0;
-  }
-  .header-logo {
-    margin-left: 0;
-  }
-  .navigation a {
-    font-size: 2.6rem;
-  }
-  .navigation {
-    gap: 1.2rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .intro {
-    padding: 8px 0 16px 0;
-  }
-  .intro-text {
-    font-size: 1.8rem;
-    text-align: center;
-    gap: 2rem;
-  }
-  .contact-btn {
-    font-size: 2.4rem;
-  }
-  .social-media {
-    align-items: center;
-    justify-content: center;
-  }
-  .card img {
-    height: 120px;
-    width: 100%;
-  }
-  #my-work {
-    padding: 4rem 2rem;
-  }
-  #my-work h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  #about {
-    padding: 0px;
-  }
-  #about p {
-    line-height: normal;
-  }
-}
-
-.footer {
-  justify-content: center;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-link {
-  padding-left: 2px;
 }
 
 html::-webkit-scrollbar-track {
