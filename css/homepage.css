@@ -411,16 +411,26 @@ html::-webkit-scrollbar-track {
   margin-block: 0.5rem;
   border-radius: 100vw;
 }
-/* #0fe397 */
 
 html::-webkit-scrollbar {
-  width: 1rem;
+  width: 1.25rem;
   height: 1em;
   border-radius: 100vw;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #184534;
+  background: #0d2b1f;
   border-radius: 100vw;
   border: 0.25rem solid rgb(224, 224, 224);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.footer a {
+  padding-left: 4px;
 }
