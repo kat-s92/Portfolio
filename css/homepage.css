@@ -401,6 +401,9 @@ h2 {
   #about {
     padding: 0px;
   }
+  #about p {
+    line-height: 1.5;
+  }
 }
 
 /*BELOW  304 [27em*16px] Very Small Smart Phone*/
@@ -447,6 +450,9 @@ h2 {
   }
   #about {
     padding: 0px;
+  }
+  #about p {
+    line-height: normal;
   }
 }
 
