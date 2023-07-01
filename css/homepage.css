@@ -327,10 +327,36 @@ h2 {
 }
 /*BELOW  432 [27em*16px] Smaller Smart Phone*/
 @media (max-width: 27em) {
+  header {
+    padding: 2.8rem 0;
+  }
   .intro-text {
     align-items: center;
     text-align: center;
     gap: 2.4rem;
+  }
+  .header-logo {
+    margin-left: 0;
+  }
+  .navigation {
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro {
+    padding: 8px 0 16px 0;
+  }
+  .intro-text {
+    font-size: 1.8rem;
+    text-align: center;
+    gap: 2rem;
+  }
+  .contact-btn {
+    font-size: 2.4rem;
+  }
+  .social-media {
+    align-items: center;
+    justify-content: center;
   }
   #me-img-lg {
     grid-column: 1;
@@ -364,6 +390,16 @@ h2 {
   }
   .navigation a:hover {
     color: none;
+  }
+  #my-work {
+    padding: 4rem 2rem;
+  }
+  #my-work h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  #about {
+    padding: 0px;
   }
 }
 
