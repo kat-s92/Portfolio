@@ -213,7 +213,7 @@ h2 {
 }
 
 #about p {
-  line-height: 2.5;
+  line-height: 2;
   font-size: 1.5rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
@@ -433,4 +433,29 @@ html::-webkit-scrollbar-thumb {
 
 .footer a {
   padding-left: 4px;
+}
+
+#skills {
+  display: grid;
+  padding-top: 1.8rem;
+  padding-bottom: 2rem;
+  grid-template-columns: auto auto;
+  row-gap: 1.6rem;
+}
+
+#skills h2 {
+  margin-bottom: 6px;
+}
+
+#skills p {
+  line-height: 1.5;
+}
+
+.spotify-frame {
+  padding-left: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.ps {
+  grid-column: 1/-1;
 }
