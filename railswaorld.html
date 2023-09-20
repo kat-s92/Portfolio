@@ -1,34 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/d15a8a0eff.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/railsworld.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="icon" href="images/porfolio-logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rails World</title>
   </head>
   <body>
-    <section class="rw-page-top">
-      <h1>Rails World</h1>
-      <h2>Project Context</h2>
-      <p>
-        Rails Foundation building a website and app for their first ever Rails
-        World conference that took place in Amsterdam in October of 2023
-      </p>
-    </section>
-    <h2>My Role: UX and UI Designer</h2>
-    <h2>Website and App Product needs</h2>
-    <h3>Web</h3>
-    <p>
-      Intro to the conference displaying the logo and key information points
-      <br />
-      Display an Agenda <br />
-      Display a panel of exciting speakers with session names who will be at the
-      conference <br />
-      FAQ section for attendees to have an information page to prepare for their
-      trip to Amsterdam
-    </p>
-    <h3>App</h3>
-    <p></p>
+    <div class="container">
+      <header>
+        <a href="index.html"
+          ><img src="images/porfolio-logo.png" class="header-logo"
+        /></a>
+        <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="#about"> About </a>
+          <a href="#my-work"> Work </a>
+          <a href="gallery.html"> For Fun </a>
+        </nav>
+      </header>
+
+      <section
+        class="banner"
+        style="background-image: url(images/project_imgs/rw-sm.png)"
+      ></section>
+      <div class="project-page-container">
+        <h1 class="main-header">Rails World</h1>
+        <p class="project-info pad-b-lg">
+          <strong>👩🏻‍💻 My Role:</strong> UX and UI Designer, part of a team of
+          developers, <br />branding specialists, accessibility expert and
+          project manager
+          <br />
+          <strong>🕚 Project Duration:</strong> 6 months <br />
+          <strong>⚙️Tools used:</strong> Figma, Miro
+        </p>
+        <h2 class="secondary-heading">Project Context</h2>
+        <p class="project-info pad-b-lg">
+          I worked with the
+          <a
+            href="https://rubyonrails.org/2023/8/2/introducing-the-team-behind-the-rails-world-website"
+            target="_blank"
+            >Rails Foundation</a
+          >
+          to help design a conference website and app for their first ever Rails
+          World conference in Amsterdam in October of 2023. Rails or Ruby on
+          Rails is a framework of the Ruby coding language and is used in web
+          development.
+        </p>
+        <h1 class="main-header">
+          Rails World Website
+          <a href="https://rubyonrails.org/world" target="blank">
+            <i class="fa-solid fa-paperclip fa-sm"></i
+          ></a>
+        </h1>
+        <h2 class="secondary-heading">Problem Statement</h2>
+
+        <p class="project-info">
+          <!-- <strong>Website</strong><br /> -->
+          This was the first time the Rails community was having an event and we
+          needed to make an engaging and informative resource that created
+          excitement around the event, helped to create a brand around Rails
+          World, boosted ticket sales, and overall attendee satisfaction.
+        </p>
+        <br />
+        <br />
+        <div class="bullets project-info pad-b-lg">
+          The challenge was to design a user-friendly website that:<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Introduces
+          conference attendees to the event <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Facilitates
+          ticket sales <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Showcases an
+          exciting panel of speakers <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Provides
+          comprehensive location details <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Expresses
+          gratitude to sponsors <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Offers a
+          clear and accessible FAQ section <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Project to
+          build the site serves as a helping hand to new developers and
+          designers who are trying to break into the tech industry
+        </div>
+        <h2 class="secondary-heading">Research and Analysis</h2>
+        <p class="project-info">
+          I started by doing some benchmarking and looked at other conference
+          sites in the tech space to see what functionality they were offering
+          to users. I analyzed interactions, UI elements, typography and
+          language of the sites. They all had some features in common that also
+          aligned with what we were trying to tackle:<br /><br />
+        </p>
+        <div class="bullets project-info pad-b-lg">
+          <i class="fa-solid fa-face-grin-beam"></i> Display of speaker cards
+          with photos and short bios of the speakers to catch attention<br />
+          <i class="fa-solid fa-face-grin-beam"></i> Clear schedule of speaker
+          sessions that allowed users to view events per day or happening
+          simultaneously<br />
+          <i class="fa-solid fa-face-grin-beam"></i> A page dedicated to the
+          logistics of the event<br />
+          <i class="fa-solid fa-face-grin-beam"></i> Descriptions of the
+          event/Intro to the organization <br />
+          <i class="fa-solid fa-face-grin-beam"></i> Sponsors section<br />
+          <i class="fa-solid fa-face-grin-beam"></i> Fonts used are mostly bold
+          and large, colours are contrasting and the tone is usually
+          casual/friendly<br />
+          <i class="fa-solid fa-face-grin-beam"></i> A nice feature was the
+          ability to add sessions to your private calendar and post conference
+          access to recordings of sessions
+        </div>
+        <h2 class="secondary-heading">The Solution</h2>
+        <p class="project-info">
+          As a group we went through each of our problem statements and
+          discussed how each feature from the benchmark analysis could solve our
+          own problems. I came up with a simple site map to visualize the bones
+          of our site and use it as a starting point for discussion about the
+          functionality and later the design of each feature.
+        </p>
+        <div class="img-wrapper">
+          <img src="images/project_imgs/sitemap.jpg" class="sitemap" />
+        </div>
+        <h2 class="secondary-heading">Design</h2>
+        <p class="project-info">
+          Once we had a well-defined idea of what we were building, it was time
+          for the fun part - designing the interactions and interface. To design
+          the site, I got some guidelines from the branding consultant who the
+          Rails Foundation was working with regarding the colour pallet, fonts
+          and some specific design aspects to stay on brand!<br />
+          Beginning with a wireframe I started to shape the initial
+          visualization of our website's appearance and functionality. During
+          the design phase, I incorporated our solutions, addressing the
+          objectives outlined in our problem statement:
+        </p>
+        <br />
+        <br />
+        <div class="bullets project-info pad-b-lg">
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i>
+          Attention-grabbing hero section with basic conference info - location,
+          dates<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Two ticket
+          buttons emphasized also to grab attention and lead the user<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Scrollable
+          carousel of speakers cards with easy access to full line-up<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Top-left
+          aligned logo (redirects to homepage) and top-right navigation bar,
+          easy for user to scan<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Speaker page
+          containing full line up as a grid of cards, same as the ones from
+          carousel<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Answers to
+          FAQ's that expand on click for a de-cluttered interface <br />
+        </div>
+
+        <div class="figma-frame">
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="950"
+            height="650"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FetQtultejpAMk87nbhC7iJ%2FRails-World%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DixkZb0U6eQ2bLLFy-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h1 class="main-header">
+          Rails World App
+          <a href="https://railsworld.agencyoflearning.com/" target="blank">
+            <i class="fa-solid fa-paperclip fa-sm"></i
+          ></a>
+        </h1>
+        <h2 class="secondary-heading">Problem Statement</h2>
+        <p class="project-info">
+          <!-- <strong>App </strong><br /> -->
+          While at the event, conference attendees often have trouble figuring
+          out who's speaking, what they'll be talking about, and when it's all
+          happening. The option to plan their own schedule ahead of time, get a
+          heads-up before the talks start, and network with other attendees adds
+          a lot to the physical experience of attending a conference. <br />
+        </p>
+        <br />
+        <br />
+        <div class="bullets project-info pad-b-lg">
+          The challenge was to build a user-friendly app that:<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Publishes an
+          up-to-date schedule of sessions <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Allows users
+          to easily add or remove sessions to their own personal schedule
+          <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Gives info
+          about the sessions, speakers, locations of events <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Reminds
+          attendees of upcoming sessions <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Gives the
+          opportunity to network by sharing a personal profile by scanning QR
+          code <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Info page
+          about the team behind the app
+        </div>
+        <h2 class="secondary-heading">Research and Analysis</h2>
+        <p class="project-info pad-b-lg">
+          There are not a lot of conference apps out there to benchmark, in most
+          cases even if they exist they are not available post conference. I
+          checked out various event apps and the likes of Google calendar and
+          summed up some common features that would address the problems we were
+          trying to solve with our app:
+        </p>
+        <div class="bullets project-info pad-b-lg">
+          <i class="fa-solid fa-face-grin-beam"></i> Agenda pages that give an
+          overview of events by days and/or by location (different conference
+          halls)<br />
+          <i class="fa-solid fa-face-grin-beam"></i> Events can be added or
+          removed from the agenda very easily on the agenda page and personal
+          schedule<br />
+          <i class="fa-solid fa-face-grin-beam"></i> Simple onboarding of no
+          more than two screens to create a user profile<br />
+          <i class="fa-solid fa-face-grin-beam"></i> Personal schedules show
+          upcoming and past events<br />
+          <i class="fa-solid fa-face-grin-beam"></i> QR code sharing: display
+          your code or save as photo, scan someone else's qr code, share qr code
+          via email or whatsapp<br />
+          <i class="fa-solid fa-face-grin-beam"></i> QR code displayed as a
+          pop-up <br />
+          <i class="fa-solid fa-face-grin-beam"></i> Notification settings are
+          usually contained in a menu somewhere or in the bottom navigation<br />
+          <i class="fa-solid fa-face-grin-beam"></i> Burger menu with more
+          options on right-top corner, bottom navigation<br />
+          <i class="fa-solid fa-face-grin-beam"></i>
+          Speaker pages (in our case) contain info about speaker and their
+          session information
+        </div>
+        <h2 class="secondary-heading">The Solution</h2>
+        <p class="project-info">
+          <!-- <strong>App</strong><br /> -->
+          The app design was more complex with more interactions and required a
+          more in-depth ideation process. We began by creating a similar map
+          with all of the features the app should have and what each one needed
+          to do.
+        </p>
+        <img src="images/project_imgs/app-sitemap-user.jpg" class="sitemap" />
+        <p class="project-info">
+          We also needed to build an admin interface for event organizers to be
+          able to manage sessions.
+        </p>
+        <img
+          src="images/project_imgs/app-sitemap-admin.jpg"
+          class="sitemap pad-b-lg"
+        />
+        <h2 class="secondary-heading">Design</h2>
+        <p class="project-info pad-b-sm">
+          I started the design process for the app by sketching my screens on
+          paper and then putting together a wireframe which I later turned into
+          the prototype below. Throughout the design phase, my focus was on
+          integrating the following user-centered solutions we came up with and
+          aligning them with our problem statement objectives:
+        </p>
+        <div class="bullets project-info pad-b-lg">
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Simple
+          onboarding journey consisting of two steps focusing on intuitive form
+          interaction design<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i>
+          Use of icons to aid the user along their journey throughout the entire
+          app<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"> </i> Clear colour
+          hierarchy for CTA buttons <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Ability to
+          keep the profile private <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Easy access
+          to Agenda if My Schedule is empty (first log-in)<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Agenda
+          lay-out per day with events in consecutive order, ability to switch
+          from upcoming to past<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Ability to
+          easily add and remove sessions from both agenda and personal
+          schedule<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Burger menu
+          over bottom navigation to allow more space for content<br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Option to
+          enable notifications inside of the burger menu, ability to dismiss all
+          and deep linking from notification to the session page<br />
+        </div>
+        <div class="figma-frame">
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="800"
+            height="650"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fd8KA0pxCnjKXsl0Qi3hblr%2FRailsWorld-App%3Ftype%3Ddesign%26node-id%3D1284-2541%26t%3Dfb6KBm9EOYeGGbNV-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D242%253A346%26mode%3Ddesign"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="800"
+            height="650"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fd8KA0pxCnjKXsl0Qi3hblr%2FRailsWorld-App%3Ftype%3Ddesign%26node-id%3D4-22%26t%3Dwx3BE2NacrCQzOcB-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D4%253A22%26mode%3Ddesign"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h2 class="secondary-heading">Testing</h2>
+        <p class="project-info pad-b-sm">
+          To test the app, we asked some of the attendees to help with
+          perfecting the experience through a demo version before it was
+          released. We received some very valuable feedback and were able to
+          make updates and re-test with the users. Some of the design-related
+          feedback that I took onboard and we were able to implement into the
+          final solution:
+        </p>
+        <div class="bullets project-info pad-b-lg">
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Inconsistent
+          CTA colour hierarchy on the Profile edit page. Elsewhere the secondary
+          button was only used to lead user "back" one step
+          <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i> Users
+          preferred for cards to have same design with speaker images on Agenda
+          and My Schedule
+          <br />
+          <i class="fa-solid fa-circle-chevron-right fa-spin"></i>
+          Add/Remove button in My Schedule was inside of the event page, so user
+          had to tap on the event first if they wanted to remove it, I added it
+          to the cards on the initial My Schedule screen
+        </div>
+        <h2 class="secondary-heading">Conclusion</h2>
+        <p class="project-info pad-b-sm">
+          Reflecting on this project, I particularly enjoyed the app testing
+          step, being a small team it was possible to implement changes very
+          fast and present updated versions to test users almost live. This was
+          such a valuable step in the process and really helped us to build a
+          great user-centered product that I hope the Ruby Foundation will
+          re-use for future conferences. <br/ > I do recognize even more areas
+          for potential enhancement, particularly in the agenda layout design. I
+          put together alternative agenda lay-outs, where events that are
+          running simultaneously at different locations are displayed in one
+          view. This way the user has better visibility and can compare and
+          choose what they want to attend.
+        </p>
+        <div class="two-cols pad-b-lg">
+          <img src="/images/project_imgs/mockup1.png" class="mockup" />
+          <img src="/images/project_imgs/mockup2.png" class="mockup" />
+        </div>
+        <p class="project-info pad-b-sm">
+          Finally, I really enjoyed working on this project and will carry many
+          valuable lessons into my future work. The cherry on top was getting to
+          attend the conference (still to come as I write this), meeting the
+          wider Ruby community and seeing them all interact with software that I
+          helped to build! 🎉
+        </p>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,18 +1,80 @@
-.rw-page-top {
-  display: flex;
-  flex-direction: column;
-  background-color: green;
-  align-items: center;
-  padding: 6rem;
-}
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 460px;
 }
 
-h1 {
-  font-size: 4.2rem;
-  color: red;
+:root {
+  --primary-h: 64px;
+  --secondary-h: 32px;
+  --sm-h: 24px;
+  --lg-p: 3.8rem;
+  --md-p: 2.4rem;
+  --sm-p: 2rem;
+  --sm-padding: 16px;
+  --md-padding: 24px;
+  --lg-padding: 64px;
+}
+
+.main-header {
+  padding-bottom: var(--sm-padding);
+  font-size: var(--primary-h);
+}
+.secondary-heading {
+  font-size: var(--secondary-h);
+  padding-bottom: var(--sm-padding);
+}
+
+a:visited {
+  color: #3d3d3d;
+}
+
+.project-info {
+  padding-right: var(--lg-padding);
+  font-size: var(--sm-p);
+  line-height: 1.5;
+  /* padding-bottom: var(--lg-padding); */
+}
+
+.project-page-container {
+  padding: var(--lg-padding);
+}
+
+.sitemap {
+  width: 1200px;
+}
+
+.img-wrapper,
+.two-cols {
+  display: flex;
+  justify-content: center;
+}
+
+.pad-b-sm {
+  padding-bottom: 16px;
+}
+.pad-b-lg {
+  padding-bottom: 48px;
+}
+
+.bullets {
+  padding-left: 24px;
+  line-height: 2;
+}
+
+.figma-frame {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  padding-bottom: 96px;
+}
+
+.mockup {
+  width: 280px;
+  height: 580px;
+}
+
+.two-cols {
+  gap: 3.2rem;
+  align-items: center;
 }
